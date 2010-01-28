@@ -1,12 +1,12 @@
 <b>Help</b>
-  
+
   <a href='http://code.google.com/p/sharpkit/wiki/Downloads'>Download and install</a>
 
   <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>Write C# instead of JavaScript</a>
+  
+  <a href='http://code.google.com/p/sharpkit/wiki/Api_Overview_JS'>JavaScript Object Model</a>
 
   <a href='http://code.google.com/p/sharpkit/wiki/Api_Overview'>Html Object Model</a>
-
-  <a href='http://code.google.com/p/sharpkit/wiki/Api_Overview_JS'>JavaScript Object Model</a>
 
   <a href='http://sharpkit.net/help/'>Class Reference</a>
 
