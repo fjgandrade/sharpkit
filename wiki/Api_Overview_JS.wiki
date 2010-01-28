@@ -79,9 +79,7 @@ function use_JsMath()
 }}}
 
 Sample output
-{{{
-Example: using native JavaScript API in C# 
-
+<pre>
 using JsDate...
 Local time is: Fri Jan 29 01:49:54 UTC+0200 2010
 
@@ -90,4 +88,4 @@ Invoking JsString.italics()
 
 using JsMath...
 Invoking JsMath.random() -> 0.4205741667695668
-}}}
+</pre>
