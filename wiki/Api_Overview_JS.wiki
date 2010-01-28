@@ -1,0 +1,5 @@
+<h1>SharpKit API Overview</h1>
+<h3>JavaScript Object Model</h3>
+The JavaScript Object Model provides the C# interface to the native browser JavaScript Runtime.
+
+<img src='http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/Api_Overview/JsObjectModel.png'/>
