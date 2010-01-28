@@ -1,0 +1,18 @@
+<h1>Download SharpKit</h1>
+<font color="#666666">First</font>
+  * <b><a href="http://sharpkit.googlecode.com/svn/release/SharpKitSetup.msi">Download SharpKit C# to JavaScript Web Toolkit</a></b>
+<font color="#666666">And then</font>
+  * <b><a href="http://sharpkit.googlecode.com/svn/release/samples.zip">Download sample code solution</a></b>
+
+<font color="Red"><b>Note:</b> sample code solution will not compile if you do not install SharpKit</font>
+
+<h3>System requirement</h3>
+  * Windows XP / Vista/ 7 / 2003 Server / 2008 Server (32bit or 64bit)
+  * Microsoft .NET framework 3.5
+
+<h3>Installing SharpKit</h3>
+Download the installer, double-click the file, and follow the setup wizard instructions.
+
+<img src='http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/sharpkit_sdk/install.png' />
+
+Once you have completed both steps, you might want to read the <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>getting started guide</a>
