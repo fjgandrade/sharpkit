@@ -1,4 +1,49 @@
 <h1>JavaScript Object Model</h1>
 The JavaScript Object Model provides the C# interface to the native browser JavaScript Runtime. The class names are prefixed with <b>Js</b> so they will not collide with the C# classes. Otherwise the API is identical to JavaScript.
 
+<h3>Example: using native JavaScript API in C#</h3>
+{{{
+using SharpKit.HtmlModel;
+using SharpKit.JavaScriptModel;
+
+namespace SharpKitSamples.JavaScriptAPI
+{
+	[JsType(JsMode.Global, "index.js")]
+	class index : HtmlContext
+	{
+		static index()
+		{
+			//Example: using native JavaScript API in C#
+			use_JsDate();
+			document.writeln("<br/>");
+			use_JsString();
+			document.writeln("<br/>");
+			use_JsMath();
+		}
+
+		static void use_JsDate()
+		{
+			document.writeln("using JsDate...<br/>");
+			var date = new JsDate();
+			document.writeln("Local time is: " + date.toString());
+		}
+
+
+		static void use_JsString()
+		{
+			document.writeln("using JsString...<br/>");
+			var str = "Invoking JsString.italics()".As<JsString>().italics();
+			document.writeln(str);
+		}
+
+		static void use_JsMath()
+		{
+			document.writeln("using JsMath...<br/>");
+			document.writeln("Invoking JsMath.random() -> " + JsMath.random().toString());
+			
+		}
+	}
+}
+
+}}}
 <img src='http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/Api_Overview/JsObjectModel.png'/>
