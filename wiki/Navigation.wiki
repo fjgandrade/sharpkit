@@ -1,3 +1,29 @@
+<b>Help</b>
+  
+  <a href='http://code.google.com/p/sharpkit/wiki/Downloads'>Download and install</a>
+
+  <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>Write C# instead of JavaScript</a>
+
+  <a href='http://code.google.com/p/sharpkit/wiki/Api_Overview'>API Overview</a>
+
+  <a href='http://sharpkit.net/help/'>Class Reference</a>
+
+<b>Contact and Support</b>
+
+  <a href='http://code.google.com/p/sharpkit/issues/list'>Report a bug</a>
+
+  <a href='http://spreadsheets.google.com/a/sharpkit.net/viewform?hl=en&formkey=dEsxRkNORV9KR21CSDZsRFV4WnoxVXc6MA'>Contact me directly</a>
+
+  <a href='http://twitter.com/sharpkit'>Follow SharpKit on Twitter</a>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
