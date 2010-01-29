@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKitSamples.JavaScriptS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKitSamples.JavaScriptAPI", "SharpKitSamples.JavaScriptAPI\SharpKitSamples.JavaScriptAPI.csproj", "{F1DF12AD-4661-473A-A2D2-87773173C5E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKitSamples.HtmlAPI", "SharpKitSamples.HtmlAPI\SharpKitSamples.HtmlAPI.csproj", "{77FC88B7-9005-4250-BF1E-2BB2450379FB}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -35,6 +37,10 @@ Global
 		{F1DF12AD-4661-473A-A2D2-87773173C5E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1DF12AD-4661-473A-A2D2-87773173C5E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1DF12AD-4661-473A-A2D2-87773173C5E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FC88B7-9005-4250-BF1E-2BB2450379FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FC88B7-9005-4250-BF1E-2BB2450379FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FC88B7-9005-4250-BF1E-2BB2450379FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FC88B7-9005-4250-BF1E-2BB2450379FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
