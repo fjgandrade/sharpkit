@@ -1,5 +1,8 @@
 <h3>JavaScript API example</h3>
 The following example illustrates how to use the C# Model classes to write native JavaScript code.
+
+<a href="http://sharpkit.googlecode.com/svn/trunk/samples/SharpKitSamples.JavaScriptAPI/index.htm">Run this example</a>
+
 {{{
 using SharpKit.HtmlModel;
 using SharpKit.JavaScriptModel;
