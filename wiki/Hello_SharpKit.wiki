@@ -63,3 +63,4 @@ void btn_click()
 }}}
 
   * Click <b>Run</b> and browse to the index.htm file
+  <img src='http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/Hello_SharpKit/ss/Hello_SharpKit_ss_s04.jpg' />
