@@ -1,4 +1,4 @@
-<h1>Write C# instead of JavaScript</h1>
+<h1>Getting started with SharpKit</h1>
 SharpKit is a Web Toolkit that enables you to write C# and convert it to JavaScript during compilation. In this tutorial, we will create a simple web application in Html and C#. The C# code will be compiled into JavaScript using SharpKit.
 
 <img src='http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/Hello_SharpKit/files.jpg' />
