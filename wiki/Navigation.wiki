@@ -12,7 +12,7 @@
 
   <a href='http://code.google.com/p/sharpkit/wiki/JavaScriptModel_Namespace'>JavaScript Object Model</a>
  
-  <a href='http://code.google.com/p/sharpkit/wiki/Htmlodel_Namespace'>Html Object Model</a>
+  <a href='http://code.google.com/p/sharpkit/wiki/HtmlModel_Namespace'>Html Object Model</a>
 
   <a href='http://sharpkit.net/help/'>Class Reference</a>
 
