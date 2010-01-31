@@ -2,7 +2,7 @@
 
   <a href='http://code.google.com/p/sharpkit/wiki/Downloads'>Download and install</a>
 
-  <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>Write C# instead of JavaScript</a>
+  <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>Getting started with SharpKit</a>
   
   <a href='http://code.google.com/p/sharpkit/wiki/JavaScript_API_Example'>JavaScript API example</a>
 
