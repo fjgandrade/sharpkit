@@ -6,10 +6,12 @@
   
   <a href='http://code.google.com/p/sharpkit/wiki/JavaScript_API_Example'>JavaScript API example</a>
 
+  <a href='http://code.google.com/p/sharpkit/wiki/Html_API_Example'>Html API example</a>
+
+<b>Object Model</b>
+
   <a href='http://code.google.com/p/sharpkit/wiki/Api_Overview_JS'>JavaScript Object Model</a>
-
-   <a href='http://code.google.com/p/sharpkit/wiki/Html_API_Example'>Html API example</a>
-
+ 
   <a href='http://code.google.com/p/sharpkit/wiki/Api_Overview'>Html Object Model</a>
 
   <a href='http://sharpkit.net/help/'>Class Reference</a>
