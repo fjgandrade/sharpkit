@@ -13,7 +13,6 @@
 <h3>Installing SharpKit</h3>
 Download the installer, double-click the file, and follow the setup wizard instructions.
 
-
-{video:youtube|mmCefOMmEMw}
+<wiki:video url="http://www.youtube.com/watch?v=mmCefOMmEMw"/>
 
 Once you have completed both steps, you might want to read the <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>getting started guide</a>
