@@ -1,6 +1,6 @@
 <h1>Download SharpKit</h1>
 <font color="#666666">First</font>
-  * <b><a href="http://sharpkit.googlecode.com/svn/release/SharpKitSetup.msi">Download SharpKit C# to JavaScript Web Toolkit</a></b>
+  * <b><a href="http://sharpkit.net/download">Download SharpKit C# to JavaScript Web Toolkit</a></b>
 <font color="#666666">And then</font>
   * <b><a href="http://sharpkit.googlecode.com/svn/release/samples.zip">Download sample code solution</a></b>
 
