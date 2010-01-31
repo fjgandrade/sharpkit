@@ -15,4 +15,4 @@ Download the installer, double-click the file, and follow the setup wizard instr
 
 <wiki:video url="http://www.youtube.com/watch?v=mmCefOMmEMw"/>
 
-Once you have completed both steps, you might want to read the <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>getting started guide</a>
+Next: <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>Write C# instead of JavaScript</a>
