@@ -1,18 +1,16 @@
 <b>Help</b>
 
-  <a href='http://code.google.com/p/sharpkit/wiki/Getting_Started'>Getting started with SharpKit</a>
+  [Getting started with SharpKit]Getting_Started
+
+  [API Overview]Api_Overview
   
-  <a href='http://code.google.com/p/sharpkit/wiki/JavaScript_API_Example'>JavaScript API example</a>
+  [Class reference]http://sharpkit.net/help/?SharpKit.BrowserModel.html
+  
+<b>Code samples</b>
 
-  <a href='http://code.google.com/p/sharpkit/wiki/Html_API_Example'>Html API example</a>
+  [JavaScript API example]JavaScript_API_Example
 
-<b>Object Model</b>
-
-  <a href='http://code.google.com/p/sharpkit/wiki/JavaScriptModel_Namespace'>JavaScript Object Model</a>
- 
-  <a href='http://code.google.com/p/sharpkit/wiki/HtmlModel_Namespace'>Html Object Model</a>
-
-  <a href='http://sharpkit.net/help/?SharpKit.BrowserModel.html'>Class Reference</a>
+  [Html API example]Html_API_Example
 
 <b>Contact and Support</b>
 
