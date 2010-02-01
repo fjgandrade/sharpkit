@@ -14,4 +14,4 @@
 
 <h3>Installing SharpKit</h3>
 Download the installer, double-click the file, and follow the setup wizard instructions.
- http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/video.png [http://www.youtube.com/SharpKitVideos#p/u/0/mmCefOMmEMw Video: Installing SharpKit]
+http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/video.png [http://www.youtube.com/SharpKitVideos#p/u/0/mmCefOMmEMw Video: Installing SharpKit]
