@@ -12,9 +12,7 @@
 
   [Html_API_Example Html API example]
 
-<b>Contact and Support</b>
-
-  <a href='http://code.google.com/p/sharpkit/issues/list'>Report a bug</a>
+<b>Contact</b>
 
   <a href='http://spreadsheets.google.com/a/sharpkit.net/viewform?hl=en&formkey=dEsxRkNORV9KR21CSDZsRFV4WnoxVXc6MA'>Contact me directly</a>
 
