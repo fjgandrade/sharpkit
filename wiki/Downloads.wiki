@@ -5,7 +5,7 @@
 <font color="#666666">And then</font>
   <h3><img src='http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/download.png'/>  <a href="http://sharpkit.googlecode.com/svn/release/samples.zip">Download HTML code samples (C#)</a></h3>
 
-
+<br/>
 <font color="#666666">Note: sample code solution will not compile if you do not install SharpKit</font>
 
 <h3>System requirement</h3>
