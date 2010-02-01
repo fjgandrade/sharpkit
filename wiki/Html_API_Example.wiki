@@ -1,4 +1,4 @@
-<h3>Html API code example</h3>
+<h3>Example: using Html DOM API in C#</h3>
 The following example illustrates how to use the C# Model classes to manipulate the Html DOM.
 
 <a href="http://sharpkit.googlecode.com/svn/trunk/samples/SharpKitSamples.HtmlAPI/index.htm">Run this example</a>
