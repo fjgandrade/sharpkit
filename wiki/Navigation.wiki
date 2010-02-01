@@ -1,6 +1,6 @@
 <b>Help</b>
 
-  Getting_Started[Getting Started]
+  [Getting_Started Getting Started]
 
   [API Overview]Api_Overview
   
