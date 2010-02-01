@@ -3,7 +3,7 @@
   <h3><img src='http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/download.png'/>      <a href="http://sharpkit.net/download">Download SharpKit C# to JavaScript Web Toolkit</a>  </h3>
 
 <font color="#666666">And then</font>
-  <h3><img src='http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/download.png'/>  <a href="http://sharpkit.googlecode.com/svn/release/samples.zip">Download HTML C# code samples</a></h3>
+  <h3><img src='http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/download.png'/>  <a href="http://sharpkit.googlecode.com/svn/release/samples.zip">Download HTML code samples (C#)</a></h3>
 
 <font color="Red"><b>Note:</b> sample code solution will not compile if you do not install SharpKit</font>
 
