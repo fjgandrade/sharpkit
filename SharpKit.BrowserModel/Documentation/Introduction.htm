@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="Stylesheet" href="Style.css" type="text/css" />
+</head>
+<body>
+	<h3>
+		SharpKit.BrowserModel assembly</h3>
+	<p>
+		The SharpKit.BrowserModel assembly provides classes and interfaces that describe available functionality
+		found in common web browsers. Functionality such as JavaScript language features, and HTML DOM (Document Object Model). 
+		It also provides a set of custom attributes, designed to describe interoperability between C# and JavaScript.
+		By using this library and the SharpKit Compiler, it is possible to write C# code and convert it to JavaScript, which is can be executed in any common web browser.
+		This technique has many benefits:
+	</p>
+		<ul>
+			<li>Better Code Maintainability - Code is compiled and type checked.</li>
+			<li>Easier integration with external libraries, since all libraries are described in a unified C# object model</li>
+			<li>Better design-time support - AutoComplete, Refactoring</li>
+			<li>Non intrusive - it is possible to revert back to JavaScript at any time or use side-by-side</li>
+		</ul>
+	<h3>
+		SharpKit.HtmlModel namespace</h3>
+	<p>
+		The SharpKit.HtmlModel namespace provides classes and interfaces that describe web browsers HTML DOM
+		(Document Object Model). Examples of types in the HTML DOM:
+	</p>
+		<ul>
+			<li>HtmlWindow - location, navigate()</li>
+			<li>HtmlDocument - getElementById, createElement, createTextNode</li>
+			<li>HtmlElement - appendChild(), parentNode, nodeType, nodeName</li>
+		</ul>
+	<h3>
+		SharpKit.JavaScriptModel
+	</h3>
+	<p>
+		The SharpKit.JavaScriptModel namespace provides classes and interfaces that describe JavaScript language
+		features, it also provides a set of custom attributes, designed to describe interoperability between C# and JavaScript.
+		Examples of JavaScript language features:</p>
+		<ul>
+			<li>
+			Keywords: typeof, instanceof, undefined, etc...</li>
+			<li>
+			Primitive types: Object, String, Date, Number, etc...</li>
+			<li>
+			Global functions: parseInt, parseFloat, etc...</li>
+		</ul>
+		<p>
+	Example of interoperability custom attributes:
+	</p>
+	<pre>
+	class GlobalFunctions
+	{
+		[JsMethod(Global=true, Name="$")]
+		public static HtmlElement getElementById(string id)
+		{
+		}
+	}</pre>
+	<p>
+		The JsMethodAttribute describes that the getElementById should be referred as a global function, with
+		the name "$". This means that this C# code
+	</p>
+	<pre>
+	var div = GlobalFunctions.getElementById("myDiv");</pre>
+	Will be transformed by SharpKit Compiler to this JavaScript code:
+	<pre>
+	var div = $("myDiv");</pre>
+	
+	
+		<h3>
+		Cross-Browser Compatibility
+	</h3>
+	<p>
+		Since the HTML DOM is not exactly the same between web browsers, types and members that are browser
+		specific are marked with the BrowserCompatibilityAttribute. In this way any browser-specific feature
+		is available, and automatic tools like SharpKit Compiler can analyze code written in C# and inform of any code
+		that might not work correctly in some browsers. Examples of browser specific functions:
+	</p>
+			<ul>
+			<li>attachEvent</li>
+			<li>innerText</li>
+			<li>textContent</li>
+			<li>addEventListener</li>
+		</ul>
+
+
+</body>
+</html>
