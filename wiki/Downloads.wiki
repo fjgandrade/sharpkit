@@ -14,4 +14,5 @@
 <h3>Installing SharpKit</h3>
 Download the installer, double-click the file, and follow the setup wizard instructions.
 
-<font color="#666666">Next:</font> <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>Getting started with SharpKit</a>
+<font color="#666666">Next:</font>
+  <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>Getting started with SharpKit</a>
