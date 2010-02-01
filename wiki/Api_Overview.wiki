@@ -1,4 +1,6 @@
-<h3>SharpKit.BrowserModel Api Overview</h3>
+<h1>SharpKit.BrowserModel API Overview</h1>
+This section provide a brief overview of the main classes in the SharpKit.Browser model assembly.
+
 <h3>JavaScript Object Model</h3>
 The JavaScript Object Model provides the C# interface to the native browser JavaScript Runtime. The class names are prefixed with <b>Js</b> so they will not collide with the C# classes. Otherwise the API is identical to JavaScript.
 
