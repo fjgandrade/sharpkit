@@ -3,7 +3,7 @@
   <h3>http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/download.png [http://sharpkit.net/download Download SharpKit]</h3>
 
 <font color="#666666">And then</font>
-  <h3>http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/download.png [http://sharpkit.googlecode.com/svn/release/samples.zip Download code samples for SharpKit.BrowserModel (C#)]</h3>
+  <h3>http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/download.png [http://sharpkit.googlecode.com/svn/release/samples.zip Download code samples (C#)]</h3>
 
 <br/>
 <font color="#666666">Note: sample code solution will not compile if you do not install SharpKit</font>
