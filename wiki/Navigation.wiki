@@ -2,15 +2,15 @@
 
   [Getting_Started Getting Started]
 
-  [API Overview]Api_Overview
+  [Api_Overview API Overview]
   
-  [Class reference]http://sharpkit.net/help/?SharpKit.BrowserModel.html
+  [http://sharpkit.net/help/?SharpKit.BrowserModel.html Class Reference]
   
 <b>Code samples</b>
 
-  [JavaScript API example]JavaScript_API_Example
+  [JavaScript_API_Example JavaScript API example]
 
-  [Html API example]Html_API_Example
+  [Html_API_Example Html API example]
 
 <b>Contact and Support</b>
 
