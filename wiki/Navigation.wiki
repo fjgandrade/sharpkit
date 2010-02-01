@@ -1,7 +1,5 @@
 <b>Help</b>
 
-  <a href='http://code.google.com/p/sharpkit/wiki/Downloads'>Download and install</a>
-
   <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>Getting started with SharpKit</a>
   
   <a href='http://code.google.com/p/sharpkit/wiki/JavaScript_API_Example'>JavaScript API example</a>
