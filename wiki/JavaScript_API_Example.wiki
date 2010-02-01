@@ -1,4 +1,4 @@
-<h1>JavaScript API example</h1>
+<h1>Example: using JavaScript API in C#</h1>
 The following example illustrates how to use the C# Model classes to write native JavaScript code.
 
 <a href="http://sharpkit.googlecode.com/svn/trunk/samples/SharpKitSamples.JavaScriptAPI/index.htm">Run this example</a>
