@@ -1,6 +1,6 @@
 <b>Help</b>
 
-  [Getting started with SharpKit]Getting_Started
+  Getting_Started
 
   [API Overview]Api_Overview
   
