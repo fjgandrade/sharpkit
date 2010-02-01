@@ -5,8 +5,7 @@
 <font color="#666666">And then</font>
   <h3><img src='http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/download.png'/>  <a href="http://sharpkit.googlecode.com/svn/release/samples.zip">Download HTML code samples (C#)</a></h3>
 
-<font color="#666666">Note:
-  sample code solution will not compile if you do not install SharpKit</font>
+<font color="#666666">Note: Sample code solution will not compile if you do not install SharpKit</font>
 
 <h3>System requirement</h3>
   * Windows XP / Vista/ 7 / 2003 Server / 2008 Server (32bit or 64bit)
@@ -15,5 +14,4 @@
 <h3>Installing SharpKit</h3>
 Download the installer, double-click the file, and follow the setup wizard instructions.
 
-<font color="#666666">Next:</font>
-  <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>Getting started with SharpKit</a>
+<font color="#666666">Next:</font> <a href='http://code.google.com/p/sharpkit/wiki/Hello_SharpKit'>Getting started with SharpKit</a>
