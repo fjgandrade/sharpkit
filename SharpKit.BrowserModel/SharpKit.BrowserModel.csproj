@@ -249,6 +249,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>if exist "D:\Projects\CodeRun\SharpKit\SharpKit Compiler\bin\DevInstaller.exe" "D:\Projects\CodeRun\SharpKit\SharpKit Compiler\bin\DevInstaller.exe" $(TargetName)</PostBuildEvent>
+    <PostBuildEvent>if exist "%25ProgramFiles%25\SharpKit\Assemblies\" copy "$(TargetDir)$(TargetName).dll" "%25ProgramFiles%25\SharpKit\Assemblies\"
+if exist "%25ProgramFiles%25\SharpKit\Assemblies\" copy "$(TargetDir)$(TargetName).xml" "%25ProgramFiles%25\SharpKit\Assemblies\"</PostBuildEvent>
   </PropertyGroup>
 </Project>
