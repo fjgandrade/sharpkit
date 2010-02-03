@@ -1,7 +1,6 @@
 ﻿using System;
 using SharpKit.HtmlModel;
 using SharpKit.JavaScriptModel;
-using SharpKit.Extensions;
 using SharpKit.Web.UI.Controls;
 
 namespace HelloWorld
