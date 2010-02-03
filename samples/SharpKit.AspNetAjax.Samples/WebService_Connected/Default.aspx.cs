@@ -22,15 +22,15 @@ namespace WebService_Connected
 	class Default_Client : JsScript
 	{
 		static bool IsConnected;
-		public static void btnConnectForNewCustomers_Click()
+		public static void btnConnect_Click()
 		{
-			var btn = document.getElementById("btnConnectForNewCustomers");
+			var btn = document.getElementById("btnConnect");
 			if (!IsConnected)
 			{
 				IsConnected = true;
 				btn.innerText = "Disconnect";
 				var service = new ConnectedWebService_Proxy();
-				service.WaitForNewCustomers(1500, ConnectForNewCustomers_SucceededCallback, ConnectForNewCustomers_ErrorCallback);
+				service.WaitForNewItems(1500, Connect_SucceededCallback, Connect_ErrorCallback);
 			}
 			else
 			{
@@ -39,16 +39,16 @@ namespace WebService_Connected
 			}
 		}
 
-		public static void ConnectForNewCustomers_ErrorCallback(WebServiceError error, object userContext, string methodName)
+		public static void Connect_ErrorCallback(WebServiceError error, object userContext, string methodName)
 		{
 			if (IsConnected)
 			{
 				var service = new ConnectedWebService_Proxy();
-				service.WaitForNewCustomers(1500, ConnectForNewCustomers_SucceededCallback, null);
+				service.WaitForNewItems(1500, Connect_SucceededCallback, null);
 			}
 		}
 
-		public static void ConnectForNewCustomers_SucceededCallback(object result, object context, string methodName)
+		public static void Connect_SucceededCallback(object result, object context, string methodName)
 		{
 			if (IsConnected)
 			{
@@ -65,7 +65,7 @@ namespace WebService_Connected
 					}
 				}
 				var service = new ConnectedWebService_Proxy();
-				service.WaitForNewCustomers(1500, ConnectForNewCustomers_SucceededCallback, null);
+				service.WaitForNewItems(1500, Connect_SucceededCallback, null);
 			}
 		}
 

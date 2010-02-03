@@ -15,12 +15,12 @@ namespace WebService_Connected
 	public class ConnectedWebService : System.Web.Services.WebService
 	{
 		[WebMethod]
-		public MyDataItem[] WaitForNewCustomers(int interval)
+		public MyDataItem[] WaitForNewItems(int interval)
 		{
 			var list = new List<MyDataItem>();
 			while (list.Count == 0)
 			{
-				list.Add(new MyDataItem { ID = new Random().Next(0, 1000000), Text = "New Customer created "+DateTime.Now });
+				list.Add(new MyDataItem { ID = new Random().Next(0, 1000000), Text = "New item created "+DateTime.Now });
 				Thread.Sleep(interval);
 			}
 			return list.ToArray();
@@ -35,7 +35,7 @@ namespace WebService_Connected
 	[JsType(Mode = JsMode.Prototype, Name = "WebService_Connected.ConnectedWebService", Export = false)]
 	public class ConnectedWebService_Proxy : WebServiceProxy
 	{
-		public WebRequest WaitForNewCustomers(int interval, WebServiceSuccessCallback successCallback, WebServiceFailureCallback failedCallback)
+		public WebRequest WaitForNewItems(int interval, WebServiceSuccessCallback successCallback, WebServiceFailureCallback failedCallback)
 		{
 			throw new NotImplementedException();
 		}

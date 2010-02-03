@@ -11,22 +11,15 @@
 	<div>
 		<asp:ScriptManager ID="ScriptManager1" runat="server">
 			<Services>
-				<asp:ServiceReference Path="~/ConnectedWebService.asmx" />
+				<asp:ServiceReference Path="ConnectedWebService.asmx" />
 			</Services>
 			<Scripts>
 			<asp:ScriptReference Path="Default.aspx.js" />
 			</Scripts>
 		</asp:ScriptManager>
-		<button id="btnConnectForNewCustomers" onclick="btnConnectForNewCustomers_Click();">Connect</button>
+		Click the button bellow to start / stop polling the web service<br />
+		<button id="btnConnect" onclick="btnConnect_Click();">Connect</button>
 		<div id="divRepeater1">
-			<asp:Repeater ID="Repeater1" runat="server">
-				<ItemTemplate>
-					<div>
-						ID=<%#((WebService_Connected.MyDataItem)Container.DataItem).ID %>
-						Text=<%#((WebService_Connected.MyDataItem)Container.DataItem).Text%>
-					</div>
-				</ItemTemplate>
-			</asp:Repeater>
 		</div>
 	</div>
 	</form>
