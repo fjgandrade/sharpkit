@@ -7,6 +7,7 @@
   * Code samples
 
 Review the program folder (typically "c:\Program Files\SharpKit") to find the assemblies and code samples. 
+
 Visual Studio templates are installed to your project templates folder ("My Documents\Visual Studio 2008\Templates\ProjectTemplates\Visual C#\SharpKit") and will appear under the SharpKit category on the New Project Dialog.
 
 <h3>System requirement</h3>
