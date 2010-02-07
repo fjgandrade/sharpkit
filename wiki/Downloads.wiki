@@ -2,8 +2,8 @@
 
 <h3>What's in the SDK</h3>
   * SharpKit C# to JavaScript compiler
-  * Assemblies for C# to JavaScript development
-  * Visual Studio templates
+  * Assemblies for C# to JavaScript development for all supported libraries
+  * Visual Studio project templates
   * Code samples
 
 Review the program folder (typically "c:\Program Files\SharpKit") to find the assemblies and code samples. 
