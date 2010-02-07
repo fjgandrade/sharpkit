@@ -1,6 +1,4 @@
-<h1>Download SharpKit</h1>
-
-  <h3>http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/download.png [http://sharpkit.net/download Download SharpKit SDK]</h3>
+<h3>http://skmedia.googlecode.com/svn/trunk/skmedia/sharpkit/images/common/download.png [http://sharpkit.net/download Download SharpKit SDK]</h3>
 
 <h3>What's in the SDK</h3>
   * SharpKit C# to JavaScript compiler
