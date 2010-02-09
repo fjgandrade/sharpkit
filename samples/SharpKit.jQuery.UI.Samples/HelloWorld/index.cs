@@ -12,7 +12,7 @@ namespace HelloWorld
 		{
 			jQuery(delegate()
 			{
-				jQuery("#div1").dialog(new DialogOptions { title = "HelloWorld" });
+				jQuery("#div1").dialog(new DialogOptions { title = "HelloWorld"});
 			});
 		}
 	}

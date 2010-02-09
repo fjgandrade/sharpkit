@@ -18,7 +18,7 @@
 			</Scripts>
 		</asp:ScriptManager>
 		Click the button bellow to start / stop polling the web service<br />
-		<button id="btnConnect" onclick="btnConnect_Click();">Connect</button>
+		<button id="btnConnect" onclick="btnConnect_Click();return false;">Connect</button>
 		<div id="divRepeater1">
 		</div>
 	</div>
