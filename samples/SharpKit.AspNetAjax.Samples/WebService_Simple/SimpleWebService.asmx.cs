@@ -30,4 +30,18 @@ namespace WebService_Simple
 		}
 	}
 
+	[JsType(JsMode.Prototype, Name = "WebService_Simple.SimpleWebService")]
+	public class SimpleWebService_Proxy : WebServiceProxy
+	{
+		public WebRequest EchoInput(string input, Action<string> successCallback)
+		{
+			throw new NotImplementedException();
+		}
+		public WebRequest EchoInput(string input, Action<string> successCallback, WebServiceFailureCallback failedCallback)
+		{
+			throw new NotImplementedException();
+		}
+
+	}
+
 }
