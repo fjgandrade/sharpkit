@@ -17,21 +17,29 @@ namespace DotNetAPI
 	[JsType(JsMode.Clr, "index.js")]
 	class DotNetAPI
 	{
+		static void WriteLine(string s)
+		{
+			doc.body.appendChild(doc.createTextNode(s));
+			doc.body.appendChild(doc.createElement("br"));
+		}
+
+		static HtmlDocument doc;
 		public static void Test(HtmlDocument document)
 		{
+			doc = document;
 			//Example: using .NET API in JavaScript
-			document.writeln("Working with DateTime...<br/>");
-			document.writeln("Local time is: " + DateTime.Now.ToString());
-			document.writeln("<br/>");
+			WriteLine("Working with DateTime...<br/>");
+			WriteLine("Local time is: " + DateTime.Now.ToString());
+			WriteLine("<br/>");
 
-			document.writeln("Working with String...<br/>");
+			WriteLine("Working with String...<br/>");
 			var str = String.Format("Here is a {0} string", "formatted");
-			document.writeln(str);
-			document.writeln("<br/>");
+			WriteLine(str);
+			WriteLine("<br/>");
 
-			document.writeln("Working with Path...<br/>");
-			document.writeln("The extensions of 'index.htm' is " + System.IO.Path.GetExtension("index.htm"));
-			document.writeln("<br/>");
+			WriteLine("Working with Path...<br/>");
+			WriteLine("The extensions of 'index.htm' is " + System.IO.Path.GetExtension("index.htm"));
+			WriteLine("<br/>");
 		}
 	}
 }

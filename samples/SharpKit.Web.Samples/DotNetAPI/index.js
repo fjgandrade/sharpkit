@@ -11,15 +11,25 @@ Class("DotNetAPI.DotNetAPI", "System.Object",
 	}
 },
 { //Static members
+	WriteLine$$String:function DotNetAPI$DotNetAPI$WriteLine(s)
+	{
+		DotNetAPI.DotNetAPI.doc.body.appendChild(DotNetAPI.DotNetAPI.doc.createTextNode(s));
+		DotNetAPI.DotNetAPI.doc.body.appendChild(DotNetAPI.DotNetAPI.doc.createElement("br"));
+	}
+	,
 	Test$$HtmlDocument:function DotNetAPI$DotNetAPI$Test(document)
 	{
-		document.writeln("Working with String...<br/>");
+		DotNetAPI.DotNetAPI.doc = document;
+		DotNetAPI.DotNetAPI.WriteLine$$String("Working with DateTime...<br/>");
+		DotNetAPI.DotNetAPI.WriteLine$$String("Local time is: " + System.DateTime.get_Now().ToString());
+		DotNetAPI.DotNetAPI.WriteLine$$String("<br/>");
+		DotNetAPI.DotNetAPI.WriteLine$$String("Working with String...<br/>");
 		var str = System.String.Format("Here is a {0} string", "formatted");
-		document.writeln(str);
-		document.writeln("<br/>");
-		document.writeln("Working with Path...<br/>");
-		document.writeln("The extensions of 'index.htm' is " + System.IO.Path.GetExtension$$String("index.htm"));
-		document.writeln("<br/>");
+		DotNetAPI.DotNetAPI.WriteLine$$String(str);
+		DotNetAPI.DotNetAPI.WriteLine$$String("<br/>");
+		DotNetAPI.DotNetAPI.WriteLine$$String("Working with Path...<br/>");
+		DotNetAPI.DotNetAPI.WriteLine$$String("The extensions of 'index.htm' is " + System.IO.Path.GetExtension$$String("index.htm"));
+		DotNetAPI.DotNetAPI.WriteLine$$String("<br/>");
 	}
 
 }, //Interfaces
