@@ -8,38 +8,23 @@ namespace DotNetAPI
 	[JsType(JsMode.Global, "index.js")]
 	class index : HtmlContext
 	{
-		static void startTest()
+		public static void doTest()
 		{
-			DotNetAPI.Test(document);
-		}
-	}
-
-	[JsType(JsMode.Clr, "index.js")]
-	class DotNetAPI
-	{
-		static void WriteLine(string s)
-		{
-			doc.body.appendChild(doc.createTextNode(s));
-			doc.body.appendChild(doc.createElement("br"));
-		}
-
-		static HtmlDocument doc;
-		public static void Test(HtmlDocument document)
-		{
-			doc = document;
 			//Example: using .NET API in JavaScript
-			WriteLine("Working with DateTime...<br/>");
-			WriteLine("Local time is: " + DateTime.Now.ToString());
-			WriteLine("<br/>");
+			writeLine("Working with DateTime...");
+			writeLine("Local time is: " + DateTime.Now.ToString());
 
-			WriteLine("Working with String...<br/>");
-			var str = String.Format("Here is a {0} string", "formatted");
-			WriteLine(str);
-			WriteLine("<br/>");
+			writeLine("Working with String...");
+			writeLine(String.Format("This {0} a {1} string", "is", "formatted"));
 
-			WriteLine("Working with Path...<br/>");
-			WriteLine("The extensions of 'index.htm' is " + System.IO.Path.GetExtension("index.htm"));
-			WriteLine("<br/>");
+			writeLine("Working with Path...");
+			writeLine("The extensions of 'index.htm' is " + System.IO.Path.GetExtension("index.htm"));
+		}
+
+		static void writeLine(string s)
+		{
+			document.body.appendChild(document.createTextNode(s));
+			document.body.appendChild(document.createElement("br"));
 		}
 	}
 }
