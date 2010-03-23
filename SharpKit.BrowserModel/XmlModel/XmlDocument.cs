@@ -34,23 +34,22 @@ namespace SharpKit.JavaScriptModel.Xml
 		string srcText { get; }
 		string reason { get; }
 	}
-	[JsType(OmitCasts = true, Export = false, NativeOverloads=true)]
+	[JsType(JsMode.Prototype, OmitCasts = true, Export = false)]
 	//[ManuallyCodedAtClient]
 	public interface IXmlDocument : IXmlNode
 	{
-		[JsPropertyAttribute(NativeField = true)]
 		IXmlDocumentParseError parseError { get; }
 		IXmlElement createElement(string tagName);
 
-		[JsPropertyAttribute(NativeField = true)]
 		IXmlElement documentElement { get; set; }
 
-		[JsPropertyAttribute(NativeField = true)]
 		IXmlAttribute[] attributes { get; }
 
 		void loadXML(string xmlString);
-		[JsPropertyAttribute(NativeField = true)]
+
 		bool async { get; set; }
+
+		JsArray<IXmlElement> getElementsByTagName(string tagName);
 	}
 
 	[JsType(OmitCasts = true, Export = false)]
@@ -123,27 +122,25 @@ namespace SharpKit.JavaScriptModel.Xml
 		IXmlNode this[int index] { get; set; }
 	}
 
-	[JsType(OmitCasts = true, Export = false)]
+	[JsType(JsMode.Prototype, OmitCasts = true, Export = false)]
 	//[ManuallyCodedAtClient]
 	public interface IXmlElement : IXmlNode
 	{
 		/// <summary>
 		/// Contains the XML representation of the node and all its descendants. Read-only.
 		/// </summary>
-		[JsPropertyAttribute(NativeField = true)]
 		string xml { get; }
 
-		[JsPropertyAttribute(NativeField = true)]
 		string tagName { get; set; }
 
-		[JsMethod(NativeOverloads=true)]
 		IXmlAttribute getAttributeNode(string name);
 
-		[JsPropertyAttribute(NativeField = true)]
 		IXmlAttributeCollection attributes { get; }
 
-		[JsMethod(NativeOverloads=true)]
 		string getAttribute(string name);
+
+		JsArray<IXmlElement> getElementsByTagName(string tagName);
+
 	}
 
 	[JsType(OmitCasts = true, Export = false)]

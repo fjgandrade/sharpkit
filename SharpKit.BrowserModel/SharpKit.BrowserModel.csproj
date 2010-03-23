@@ -38,6 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BrowserCompatibility\SupportedBrowserAttribute.cs" />
+    <Compile Include="HtmlModel\ActiveXObject.cs" />
     <Compile Include="HtmlModel\HtmlContext.cs" />
     <Compile Include="HtmlModel\HtmlAnchor.cs" />
     <Compile Include="HtmlModel\HtmlCaption.cs" />
@@ -249,7 +250,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>if exist "%25ProgramFiles%25\SharpKit\Assemblies\" copy "$(TargetDir)$(TargetName).dll" "%25ProgramFiles%25\SharpKit\Assemblies\"
-if exist "%25ProgramFiles%25\SharpKit\Assemblies\" copy "$(TargetDir)$(TargetName).xml" "%25ProgramFiles%25\SharpKit\Assemblies\"</PostBuildEvent>
+    <PostBuildEvent>if exist "%25ProgramFiles%25\SharpKit\Assemblies\" copy "$(TargetDir)$(TargetName).dll" "%25ProgramFiles%25\SharpKit\Assemblies\" /Y
+if exist "%25ProgramFiles%25\SharpKit\Assemblies\" copy "$(TargetDir)$(TargetName).xml" "%25ProgramFiles%25\SharpKit\Assemblies\" /Y</PostBuildEvent>
   </PropertyGroup>
 </Project>

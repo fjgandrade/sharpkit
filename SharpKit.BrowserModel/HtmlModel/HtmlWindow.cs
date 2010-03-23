@@ -634,7 +634,7 @@ Safari and Chrome don’t support these events on links and/or form fields in al
 
 		[HtmlSpecificationVersion(5)]
 		[JsProperty(NativeField = true)]
-		public WindowProxy frames
+		public JsArray<WindowProxy> frames
 		{
 			get;
 			private set;
