@@ -182,50 +182,115 @@ namespace SharpKit.JavaScriptModel
 			Filename = filename;
 		}
 
+		bool? _NativeDelegates;
 		/// <summary>
 		/// Indicates that all delegate parameters in all members are native javascript functions
 		/// </summary>
-		public bool NativeDelegates { get; set; }
+		public bool NativeDelegates
+		{
+			get { return _NativeDelegates.GetValueOrDefault(); }
+			set { _NativeDelegates = value; }
+		}
 
+		bool? _OmitCasts;
 		/// <summary>
 		/// When true, omits all casts to this type
 		/// </summary>
-		public bool OmitCasts { get; set; }
+		public bool OmitCasts
+		{
+			get { return _OmitCasts.GetValueOrDefault(); }
+			set { _OmitCasts = value; }
+		}
 
-		public bool NativeFields { get; set; }
 
+		bool? _NativeFields;
+		public bool NativeFields
+		{
+			get { return _NativeFields.GetValueOrDefault(); }
+			set { _NativeFields = value; }
+		}
+
+
+		bool? _NativeEnumerator;
 		/// <summary>
 		/// When true, foreach statements will use the for..in syntax of Javascript
 		/// </summary>
-		public bool NativeEnumerator { get; set; }
+		public bool NativeEnumerator
+		{
+			get { return _NativeEnumerator.GetValueOrDefault(); }
+			set { _NativeEnumerator = value; }
+		}
 
+
+		bool? _NativeConstructors;
 		/// <summary>
 		/// When true, instanciations of this class will use the native Javascript method, rather than calling a constructor
 		/// </summary>
-		public bool NativeConstructors { get; set; }
+		public bool NativeConstructors
+		{
+			get { return _NativeConstructors.GetValueOrDefault(); }
+			set { _NativeConstructors = value; }
+		}
 
+
+		bool? _NativeOverloads;
 		/// <summary>
 		/// When true, instanciations of this class will use the native Javascript method, rather than calling a constructor
 		/// </summary>
-		public bool NativeOverloads { get; set; }
+		public bool NativeOverloads
+		{
+			get { return _NativeOverloads.GetValueOrDefault(); }
+			set { _NativeOverloads = value; }
+		}
 
-		/// <summary>
-		/// When set, changes the type name in the client code
-		/// </summary>
-		public string Name { get; set; }
 
+
+		bool? _Native;
 		/// <summary>
 		/// Indicates that this type will be exported as native js type, 
 		/// only one constructor is allowed, 
 		/// all instance members will be exported to the constructor's prototype
 		/// all static members will be exported to the constructor's members
 		/// </summary>
-		public bool Native { get; set; }
+		public bool Native
+		{
+			get { return _Native.GetValueOrDefault(); }
+			set { _Native = value; }
+		}
 
+
+		bool? _GlobalObject;
 		/// <summary>
 		/// When set, the class methods and properties will be declared on the window object, instead of a class.
 		/// </summary>
-		public bool GlobalObject { get; set; }
+		public bool GlobalObject
+		{
+			get { return _GlobalObject.GetValueOrDefault(); }
+			set { _GlobalObject = value; }
+		}
+
+		bool? _NativeFunctions;
+		/// <summary>
+		/// Any anonymous delegate creation will be exported as a native inline function in javascript
+		/// </summary>
+		public bool NativeFunctions
+		{
+			get { return _NativeFunctions.GetValueOrDefault(); }
+			set { _NativeFunctions = value; }
+		}
+
+
+		bool? _NativeJsons;
+		/// <summary>
+		/// Anonymous objects will be created and treated as Json objects
+		/// </summary>
+		public bool NativeJsons
+		{
+			get { return _NativeJsons.GetValueOrDefault(); }
+			set { _NativeJsons = value; }
+		}
+
+
 
 		bool? _Export;
 		/// <summary>
@@ -245,6 +310,10 @@ namespace SharpKit.JavaScriptModel
 		}
 
 		/// <summary>
+		/// When set, changes the type name in the client code
+		/// </summary>
+		public string Name { get; set; }
+		/// <summary>
 		/// The target filename to generate the javascript code into, when using a relative path, it will be relative to the current cs file,
 		/// You may use the ~  (tilda) operator to designate the project directory
 		/// </summary>
@@ -255,15 +324,7 @@ namespace SharpKit.JavaScriptModel
 		/// </summary>
 		public string Exporter { get; set; }
 
-		/// <summary>
-		/// Any anonymous delegate creation will be exported as a native inline function in javascript
-		/// </summary>
-		public bool NativeFunctions { get; set; }
 
-		/// <summary>
-		/// Anonymous objects will be created and treated as Json objects
-		/// </summary>
-		public bool NativeJsons { get; set; }
 
 		internal JsMode? _Mode;
 		public JsMode Mode
@@ -278,24 +339,12 @@ namespace SharpKit.JavaScriptModel
 				if (_Mode == JsMode.Global)
 				{
 					GlobalObject = true;
-					NativeOverloads = true;
-					NativeDelegates = true;
-					NativeFields = true;
-					NativeConstructors = true;
-					NativeEnumerator = true;
-					NativeFunctions = true;
-					NativeJsons = true;
+					GoNative();
 				}
 				else if (_Mode == JsMode.Prototype)
 				{
 					Native = true;
-					NativeOverloads = true;
-					NativeDelegates = true;
-					NativeFields = true;
-					NativeConstructors = true;
-					NativeEnumerator = true;
-					NativeFunctions = true;
-					NativeJsons = true;
+					GoNative();
 				}
 				else if (_Mode == JsMode.Clr)
 				{
@@ -304,15 +353,27 @@ namespace SharpKit.JavaScriptModel
 				{
 					Native = true;
 					Export = false;
-					NativeOverloads = true;
-					NativeDelegates = true;
-					NativeFields = true;
-					NativeConstructors = true;
-					NativeEnumerator = true;
-					NativeFunctions = true;
-					NativeJsons = true;
+					GoNative();
 				}
 			}
+		}
+
+		private void GoNative()
+		{
+			if (_NativeOverloads == null)
+				NativeOverloads = true;
+			if (_NativeDelegates == null)
+				NativeDelegates = true;
+			if (_NativeFields == null)
+				NativeFields = true;
+			if (_NativeConstructors == null)
+				NativeConstructors = true;
+			if (_NativeEnumerator == null)
+				NativeEnumerator = true;
+			if (_NativeFunctions == null)
+				NativeFunctions = true;
+			if (_NativeJsons == null)
+				NativeJsons = true;
 		}
 
 	}
