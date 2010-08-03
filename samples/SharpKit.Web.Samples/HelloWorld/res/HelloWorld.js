@@ -5,45 +5,45 @@ Class("HelloWorld.index_Server", "System.Object",
 	{
 		System.Object.ctor.call(this);
 	},
-	OnPropertyChanging$$String:function HelloWorld$index_Server$OnPropertyChanging(propertyName)
+	OnPropertyChanging$$String:function(propertyName)
 	{
 		return this.__interceptor.ForceIntercept(this, "HelloWorld", "HelloWorld.index_Server", "OnPropertyChanging", arguments);
 	}
 	,
-	OnPropertyChanged$$String:function HelloWorld$index_Server$OnPropertyChanged(propertyName)
+	OnPropertyChanged$$String:function(propertyName)
 	{
 		if (this.PropertyChanged != null)
 			this.PropertyChanged.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs.ctor$$String(propertyName));
 	}
 	,
-	add_PropertyChanging:function HelloWorld$index_Server$add_PropertyChanging(value)
+	add_PropertyChanging:function(value)
 	{
 		return this.__interceptor.ForceIntercept(this, "HelloWorld", "HelloWorld.index_Server", "add_PropertyChanging", arguments);
 	}
 	,
-	remove_PropertyChanging:function HelloWorld$index_Server$remove_PropertyChanging(value)
+	remove_PropertyChanging:function(value)
 	{
 		return this.__interceptor.ForceIntercept(this, "HelloWorld", "HelloWorld.index_Server", "remove_PropertyChanging", arguments);
 	}
 	,
-	add_PropertyChanged:function HelloWorld$index_Server$add_PropertyChanged(value)
+	add_PropertyChanged:function(value)
 	{
 		return this.__interceptor.ForceIntercept(this, "HelloWorld", "HelloWorld.index_Server", "add_PropertyChanged", arguments);
 	}
 	,
-	remove_PropertyChanged:function HelloWorld$index_Server$remove_PropertyChanged(value)
+	remove_PropertyChanged:function(value)
 	{
 		return this.__interceptor.ForceIntercept(this, "HelloWorld", "HelloWorld.index_Server", "remove_PropertyChanged", arguments);
 	}
 
 },
 { //Static members
-	GetSomeData:function HelloWorld$index_Server$GetSomeData()
+	GetSomeData:function()
 	{
 		return RemotingServices.ForceIntercept(null, "HelloWorld", "HelloWorld.index_Server", "GetSomeData", arguments);
 	}
 	,
-	OnStaticPropertyChanged$$String:function HelloWorld$index_Server$OnStaticPropertyChanged(propertyName)
+	OnStaticPropertyChanged$$String:function(propertyName)
 	{
 		SharpKit.Runtime.Services.StaticPropertyChangeNotificationService.NotifyChanged$$Type$$String(Typeof(HelloWorld.index_Server), propertyName);
 	}
@@ -61,23 +61,23 @@ Class("HelloWorld.index_Data", "System.Object",
 		System.Object.ctor.call(this);
 	},
 	Text$$:"System.String",
-	get_Text:function HelloWorld$index_Data$get_Text()
+	get_Text:function()
 	{
 		return this._Text;
 	}
 	,
-	set_Text:function HelloWorld$index_Data$set_Text(value)
+	set_Text:function(value)
 	{
 		this._Text = value;
 	}
 	,
 	Date$$:"System.DateTime",
-	get_Date:function HelloWorld$index_Data$get_Date()
+	get_Date:function()
 	{
 		return this._Date;
 	}
 	,
-	set_Date:function HelloWorld$index_Data$set_Date(value)
+	set_Date:function(value)
 	{
 		this._Date = value;
 	}

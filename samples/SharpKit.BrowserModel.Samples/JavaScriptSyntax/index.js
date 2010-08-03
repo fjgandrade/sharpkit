@@ -7,7 +7,7 @@ ShoppingCart.prototype.total = 0;
 
 ShoppingCart.prototype.items = new Array();
 
-ShoppingCart.prototype.addItem=function ShoppingCart$addItem(name, price)
+ShoppingCart.prototype.addItem=function(name, price)
 {
 	var p = {name:name,
 	price:price};
@@ -15,7 +15,7 @@ ShoppingCart.prototype.addItem=function ShoppingCart$addItem(name, price)
 	this.total += price;
 }
 
-ShoppingCart.prototype.print=function ShoppingCart$print(writer)
+ShoppingCart.prototype.print=function(writer)
 {
 	writer.write("total products:" + this.items.length);
 	writer.write(", total price:" + this.total);

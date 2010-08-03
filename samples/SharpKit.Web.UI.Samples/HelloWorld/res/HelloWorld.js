@@ -5,7 +5,7 @@ Class("HelloWorld.MyControl", "SharpKit.Web.UI.Controls.Panel",
 	{
 		SharpKit.Web.UI.Controls.Panel.ctor.call(this);
 	},
-	Render:function HelloWorld$MyControl$Render()
+	Render:function()
 	{
 		SharpKit.Web.UI.Controls.Panel.commonPrototype.Render.call(this);
 		var btn = NewWithInitializer(SharpKit.Web.UI.Controls.Button, {Text:"Click me"});
@@ -13,7 +13,7 @@ Class("HelloWorld.MyControl", "SharpKit.Web.UI.Controls.Panel",
 		this.AppendChild$$Control(btn);
 	}
 	,
-	btn_Click$$HtmlDomEventArgs:function HelloWorld$MyControl$btn_Click(e)
+	btn_Click$$HtmlDomEventArgs:function(e)
 	{
 		var text = "<br/> Button was clicked on " + System.DateTime.get_Now();
 		this.AppendChild$$Control(NewWithInitializer(SharpKit.Web.UI.Controls.Label, {ParseContents:true,
