@@ -3,14 +3,9 @@
   * Download and install SharpKit Setup
   * Add the following line on your .csproj file: (add it right after all 'Import' sections in your project file)
     {{{<Import Project="$(MSBuildBinPath)\SharpKit\4\SharpKit.Build.targets" />}}}
-  * Add the following files into your project:
-  * javascript-1.6.cs
-        * html-4.01.cs
-    These files are located on your computer at:
-    {{{"C:\Program Files (x86)\SharpKit\4\Libraries"}}}
-    or in 32 bit operating systems at:
-    {{{"C:\Program Files\SharpKit\4\Libraries"}}} 
+  * Add and include [http://sharpkit.googlecode.com/svn/trunk/SharpKit_SDK/javascript-1.5.cs javascript-1.6.cs] and [http://sharpkit.googlecode.com/svn/trunk/SharpKit_SDK/html-4.01.cs html-4.01.cs] in your project
   * Create a new class and add the following code:
+
 {{{
 [JsType(JsMode.Global, Filename="Site.js")]
 	class Site : HtmlContext
@@ -21,7 +16,8 @@
 	}
 }
 }}}
-The {{{JsType}}} attribute will cause SharpKit to convert the class Site into the file Site.js
+
+  * Compile the project. The {{{JsType}}} attribute will cause SharpKit to convert the class Site into the file Site.js
   * Create an .html or .aspx file, and include the Site.js file
     
 {{{
@@ -34,3 +30,7 @@ The {{{JsType}}} attribute will cause SharpKit to convert the class Site into th
 </body>
 </html>
 }}}
+
+  * View the web page in your browser
+
+Congratulations! You've just created your first JavaScript application from C#.
