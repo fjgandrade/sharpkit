@@ -8,7 +8,7 @@ using SharpKit.Html4;
 class GlobalCodeSample : HtmlContext
 {
     //Static fields are converted to global fields
-    static JsString message = "showMessage() global function was invoked";
+    static JsString message = "showMessage() global function was invoked!";
 
     //Static method are converted to global functions
     static void showMessage()
