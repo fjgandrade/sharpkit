@@ -33,4 +33,4 @@
 
   * View the web page in your browser
 
-Congratulations! You've just created your first JavaScript application from C#.
+Congratulations! You've just created your first JavaScript application from C#. To continue and change the JS file, simply change the CS file and recompile.
