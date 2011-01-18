@@ -4,13 +4,6 @@
 
   [Api_Overview API Overview]
   
-  [http://sharpkit.net/help/?SharpKit.BrowserModel.html Class Reference]
-  
-<b>Code samples</b>
-
-  [JavaScript_API_Example JavaScript API example]
-
-  [Html_API_Example Html API example]
 
 <br/>
 <br/>
