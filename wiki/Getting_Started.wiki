@@ -1,18 +1,16 @@
 = Getting Started with SharpKit =
 == Integrating SharpKit to an existing project ==
-        * Download the setup file, and install.
-        * Add the following line on your .csproj file: (add it right after all 'Import' sections in your project file)
+  * Download and install SharpKit Setup
+  * Add the following line on your .csproj file: (add it right after all 'Import' sections in your project file)
     {{{<Import Project="$(MSBuildBinPath)\SharpKit\4\SharpKit.Build.targets" />}}}
-    
-* Add the following files into your project:
-        * javascript-1.6.cs
+  * Add the following files into your project:
+  * javascript-1.6.cs
         * html-4.01.cs
     These files are located on your computer at:
     {{{"C:\Program Files (x86)\SharpKit\4\Libraries"}}}
     or in 32 bit operating systems at:
     {{{"C:\Program Files\SharpKit\4\Libraries"}}} 
-* Create a new class and add the following code:
-    
+  * Create a new class and add the following code:
 {{{
 [JsType(JsMode.Global, Filename="Site.js")]
 	class Site : HtmlContext
@@ -24,7 +22,7 @@
 }
 }}}
 The {{{JsType}}} attribute will cause SharpKit to convert the class Site into the file Site.js
-* Create an .html or .aspx file, and include the Site.js file
+  * Create an .html or .aspx file, and include the Site.js file
     
 {{{
 <html>
