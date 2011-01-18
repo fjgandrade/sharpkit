@@ -1,4 +1,4 @@
-= Quick start =
+= Getting Started with SharpKit =
 == Integrating SharpKit to an existing project ==
         * Download the setup file, and install.
         * Add the following line on your .csproj file: (add it right after all 'Import' sections in your project file)
