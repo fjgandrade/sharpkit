@@ -1,22 +1,5 @@
-<b>Help</b>
+=Help=
 
-  [Getting_Started Getting Started]
+[Getting_Started Getting Started]
 
-  [Api_Overview API Overview]
-  
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+[Api_Overview API Overview]
