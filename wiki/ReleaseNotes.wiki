@@ -1,0 +1,7 @@
+SharpKit v4.03.0000
+
+* Fixed upgrade issue in installation.
+* Added SharpKit SDK assemblies into installer.
+* JsTypeAttribute can be applied on external types, as an assembly attribute, using the TargetType property.
+* JsTypeAttribute supports adding manual js code before and after the type export, using the PreCode and PostCode properties.
+* JsTypeAttribute now supports custom order of types in a single file, using the OrderInFile property.
