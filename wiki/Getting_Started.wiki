@@ -3,7 +3,14 @@
   * Download and install SharpKit Setup
   * Add the following line on your .csproj file, at the bottom of the 'Import' sections:
     {{{<Import Project="$(MSBuildBinPath)\SharpKit\4\SharpKit.Build.targets" />}}}
-  * Include [http://sharpkit.googlecode.com/svn/trunk/SharpKit_SDK/javascript-1.5.cs javascript-1.6.cs] and [http://sharpkit.googlecode.com/svn/trunk/SharpKit_SDK/html-4.01.cs html-4.01.cs] in your project
+  * Add the following lines on your .csproj file, at the bottom of the 'Reference' sections:
+    {{{
+<Reference Include="SharpKit.JavaScript"/>
+<Reference Include="SharpKit.Html4"/>
+}}}
+Or
+  * Include the files javascript-1.5.cs and html-4.01.cs in your project, these files are available in the SharpKit SDK project, and also in the SharpKit folder on your Program Files.
+
   * Create a new class and add the following code:
 
 {{{
