@@ -28,10 +28,10 @@ namespace SharpKitSamples.HtmlAPI
 			//when input is blured, insert a new item if it is not empty
 			if (sender.value == null || sender.value == "")
 				return false;
-			var ul = document.getElementById("ulTaskList").UnsafeCast<HtmlUnorderedList>();
+			var ul = document.getElementById("ulTaskList").As<HtmlUnorderedList>();
 			var li = document.createElement<HtmlListItem>("li");
 			li.appendChild(document.createTextNode(sender.value));
-			var liNewTask = document.getElementById("liNewTask").UnsafeCast<HtmlListItem>();
+			var liNewTask = document.getElementById("liNewTask").As<HtmlListItem>();
 			liNewTask.insertAdjacentElement("beforeBegin", li);
 
 			//reset the input to blank
