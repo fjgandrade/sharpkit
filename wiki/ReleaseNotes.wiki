@@ -1,5 +1,5 @@
 =SharpKit v4.03.9000=
-* Force assembly overwrite during upgrade
+  * Force assembly overwrite during upgrade
 
 =SharpKit v4.03.0000=
 ==Fixes==
