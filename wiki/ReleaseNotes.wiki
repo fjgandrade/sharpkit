@@ -1,3 +1,6 @@
+=SharpKit v4.04.3000=
+  * Support export of external types (enums and interfaces only) :-)
+
 =SharpKit v4.03.9000=
   * Force assembly overwrite during upgrade
   * Support manual activation
