@@ -1,3 +1,6 @@
+=SharpKit v4.04.4000=
+  * Fixed upgrade bug (dll and exe files not overwritten)
+
 =SharpKit v4.04.3000=
   * Support export of external types (enums and interfaces only) :-)
 
