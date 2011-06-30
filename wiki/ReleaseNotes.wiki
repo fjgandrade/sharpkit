@@ -9,8 +9,7 @@
 =SharpKit v4.05.2000=
   * Support not overwriting read-only files, if generated content is the same (for better source control support).
   * Fix AutomaticPropertiesAsFields bug in assembly references - fix automatic property detection
-  * Fix static variables and properties issues in clr mode
-#11, #12
+  * Fix static variables and properties issues in clr mode #11, #12
   * Create jQueryUI.Controls library - control wrappers for jQuery UI
   * Fixed #14 Wrong jQuery.each method signature
 
