@@ -1,3 +1,29 @@
+=SharpKit v4.05.3000=
+  * Fixed localization issue
+  * Fixed crash when referencing Microsoft Enterprise library
+  * JsClr fixes: 
+   * System.Linq.Enumerable.Any()
+   * Object.Equals() methods implemented
+   * System.Collections.Generic.Dictionary fixed
+
+=SharpKit v4.05.2000=
+  * Support not overwriting read-only files, if generated content is the same (for better source control support).
+  * Fix AutomaticPropertiesAsFields bug in assembly references - fix automatic property detection
+  * Fix static variables and properties issues in clr mode
+#11, #12
+  * Create jQueryUI.Controls library - control wrappers for jQuery UI
+  * Fixed #14 Wrong jQuery.each method signature
+
+=SharpKit v4.05.1000=
+  * Support JsMode.Json on enums
+  * Support target type on enums
+  * Support prototype mode automatic namespace declarations
+  * Fix +=, -= on JsClr propreties
+  * Added jquery ui button
+  * Changed browser, fx and boxModel to static
+  * Added Firebug console library (Credit: Nadav)
+
+
 =SharpKit v4.04.9000=
   * SDK new build configurations, for multi target frameworks: v4.0, v3.5, two sets of assemblies
   * Skip SharpKit build when files are up to date.
