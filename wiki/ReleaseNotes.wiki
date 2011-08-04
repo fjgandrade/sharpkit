@@ -3,7 +3,9 @@
   * Fixed autonamespaces on prototype enums
   * Fixed wrong export of 'return' in void lambda expressions
   * Fixed type and method const declarations in all native modes
-  * Added visual stuido project templates to sharpkit program files dir 
+  * Added visual stuido project templates to sharpkit program files dir
+  * Fix js clr namespaces to live side by side with native namespaces
+ 
 =SharpKit v4.05.3000=
   * Fixed localization issue
   * Fixed crash when referencing Microsoft Enterprise library
