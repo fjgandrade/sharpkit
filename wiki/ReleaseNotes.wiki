@@ -1,4 +1,5 @@
 =SharpKit v4.05.5000=
+  * Added SharpKit.W3C.DOM new standard HTML library including HTML5 apis
   * Fixed autonamespaces on prototype enums
   * Fixed wrong export of 'return' in void lambda expressions
   * Fixed type and method const declarations in all native modes
