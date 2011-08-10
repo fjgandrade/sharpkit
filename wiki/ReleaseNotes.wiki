@@ -8,7 +8,7 @@
   * Clr types do not require compiler to be present until compilation
   * JsCompiler moved to prototype mode (except global keywords), to compile in previous clr mode, add define: JSCLR_4_0_0 to compilation
   * Fixed Activator.CreateInstance(type)
-  * Implemented Activator.CreateInstance<T>()
+  * Implemented Activator.CreateInstance&ltlT&gt;()
   * Added JsContext.String(object obj)
   * Added jQuery.Item[int] indexer access
   * Change all classes to prototype mode
