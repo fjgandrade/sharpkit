@@ -1,3 +1,20 @@
+=SharpKit v4.06.0000=
+  * Implement JsClr 4.1.0 with JsClr4_1_0 Exporter
+  * Format js clr 4.1.0 json types
+  * Support native delegates in instances with caller context
+  * Fixed -= to convert to Delegate.Remove
+  * Support native delegates in instances with caller context
+  * Clr delegates are now native functions, no need for Invoke() method
+  * Clr types do not require compiler to be present until compilation
+  * JsCompiler moved to prototype mode (except global keywords), to compile in previous clr mode, add define: JSCLR_4_0_0 to compilation
+  * Fixed Activator.CreateInstance(type)
+  * Implemented Activator.CreateInstance<T>()
+  * Added JsContext.String(object obj)
+  * Added jQuery.Item[int] indexer access
+  * Change all classes to prototype mode
+  * Add Event.originalEvent
+  * Change all methods to use jQuery Event instead of HtmlDomEventArgs
+
 =SharpKit v4.05.5000=
   * Added SharpKit.W3C.DOM new standard HTML library including HTML5 apis
   * Fixed autonamespaces on prototype enums
